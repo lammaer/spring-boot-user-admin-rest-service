@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetUserByNameTest extends AbstractRestAssuredBase {
+public class GetUserByNameTestIT extends AbstractRestAssuredBase {
     @BeforeAll
     public static void setup() {
         RestAssured.basePath = "api/v1/user";
