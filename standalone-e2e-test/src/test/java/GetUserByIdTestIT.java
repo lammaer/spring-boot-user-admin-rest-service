@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class GetUserByIdTest extends AbstractRestAssuredBase {
+public class GetUserByIdTestIT extends AbstractRestAssuredBase {
     @BeforeAll
     public static void setup() {
         RestAssured.basePath = "api/v1/user/{userId}";

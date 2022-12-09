@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Named.named;
 
-public class PostNewUserTest extends AbstractRestAssuredBase {
+public class PostNewUserTestIT extends AbstractRestAssuredBase {
     static String NEW_USER_NAME = "new user";
     static String NEW_USER_EMAIL = "test@test.com";
 

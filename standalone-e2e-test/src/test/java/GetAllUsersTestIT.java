@@ -16,7 +16,7 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetAllUsersTest extends AbstractRestAssuredBase {
+public class GetAllUsersTestIT extends AbstractRestAssuredBase {
     @BeforeAll
     public static void setup() {
         RestAssured.basePath = "api/v1/users";
