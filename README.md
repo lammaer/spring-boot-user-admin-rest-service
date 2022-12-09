@@ -80,7 +80,7 @@ docker run -p 8080:8080 userwebservice/latest
 
 How standalone tests launch docker image:
 
-docker-maven-plugin "start" and "stop" goals control the docker image
+fabric8 docker-maven-plugin "start" and "stop" goals controls the docker image
 Both goals are bound to the pre-integration-test and post-integration-test phase
 respectively. It is recommended to use the maven-failsafe-plugin for integration testing in 
 order to stop the docker container even when the tests fail.
@@ -90,4 +90,4 @@ pre-integration-test and post-integration-test phases
 To make sure test are picked up only by the failsafe plugin and not by the surefire plugin, tests renamed to 
 *IT.java format.
 
-Docker image created in the webservice submodule, using  dockerfile-maven-plugin
+Docker image created in the webservice submodule, using  also the fabric8 docker-maven-plugin
