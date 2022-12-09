@@ -88,7 +88,6 @@
                 <!-- the plugin starting and stopping the local service instance used during EE test exec -->
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.20.1</version>
                 <executions>
                     <execution>
                         <id>start-webservice-docker-image</id>
@@ -99,8 +98,8 @@
                             <skip>${skipStartServiceLocally}</skip>
                             <images>
                                 <image>
-                                    <name>webservice:0.0.1-SNAPSHOT</name>
-                                    <alias>webservice</alias>
+                                    <name>userwebservice:0.0.1-SNAPSHOT</name>
+                                    <alias>userwebservice</alias>
                                     <run>
                                         <ports>
                                             <port>8080:8080</port>

@@ -8,13 +8,13 @@
 Launch as compiled jar
 ```
 mvn clean install
-java -jar webservice/target/webservice-0.0.1-SNAPSHOT.jar
+java -jar webservice/target/userwebservice-0.0.1-SNAPSHOT.jar
 ```
 
 Launch as docker image
 ```
 mvn clean install
-docker run -p 8080:8080 webservice:0.0.1-SNAPSHOT
+docker run -p 8080:8080 userwebservice:0.0.1-SNAPSHOT
 ```
 
 ### Api Documentation
@@ -73,8 +73,8 @@ Dockerfile: https://www.baeldung.com/java-dockerize-app#writing-the-dockerfile
 https://dzone.com/articles/build-docker-image-from-maven - instead of it I used dockerfile-maven-plugin
 
 Command for manual build and execution
-docker build -t webservice/latest ./webservice
-docker run -p 8080:8080 webservice/latest
+docker build -t userwebservice/latest ./webservice
+docker run -p 8080:8080 userwebservice/latest
 
 --------
 
