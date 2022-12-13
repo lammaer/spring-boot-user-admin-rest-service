@@ -18,6 +18,11 @@ http://localhost:8080/api/swagger-ui/
 
 ### Testing
 
+3 levels of testing we have: 
+- unit tests
+- integration test (SpringBootTest executed during the service build)
+- standalone E2E tests (executed during build time against a dockerised instancestarted locally, and can be executed in standalone mode on service deployed to environments (prod - just placeholder atm)
+
 Run E2E tests only
 ```
 mvn clean test -pl standalone-e2e-test -DskipTests=false
